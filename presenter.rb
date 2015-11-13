@@ -1,6 +1,6 @@
 module Presenter
   include ContextAccessor
   def show_object
-    p self.content[context.id]
+    puts "#{context.id} #{self.content[context.id].inspect}"
   end
 end
